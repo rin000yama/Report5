@@ -3,8 +3,14 @@ public class report5 {
 
         String str = null;
 
-        System.out.println(str.length());
-        
+        try{
+
+            System.out.println(str.length());
+        }catch(NullPointerException e){
+
+            System.out.println("nullPointExceotionがありました。");
+            System.out.println(e.getMessage());
+        }
     }
     
 }
